@@ -1,0 +1,40 @@
+{
+    "type": "result",
+    "timestamp": "2020-05-27T13:23:36Z",
+    "ping": {
+        "jitter": 19.359000000000002,
+        "latency": 50.402000000000001
+    },
+    "download": {
+        "bandwidth": 1674541,
+        "bytes": 23810980,
+        "elapsed": 15010
+    },
+    "upload": {
+        "bandwidth": 293771,
+        "bytes": 3932159,
+        "elapsed": 13729
+    },
+    "packetLoss": 0,
+    "isp": "Yota",
+    "interface": {
+        "internalIp": "192.168.1.60",
+        "name": "",
+        "macAddr": "4C:CC:6A:D4:59:63",
+        "isVpn": false,
+        "externalIp": "94.25.162.171"
+    },
+    "server": {
+        "id": 3521,
+        "name": "Rostelecom",
+        "location": "Kaluga",
+        "country": "Russian Federation",
+        "host": "kaluga.speedtest.rt.ru",
+        "port": 8080,
+        "ip": "62.148.152.75"
+    },
+    "result": {
+        "id": "7cecb87c-74fe-4d47-a4bf-78afb70a1127",
+        "url": "https://www.speedtest.net/result/c/7cecb87c-74fe-4d47-a4bf-78afb70a1127"
+    }
+}
