@@ -126,6 +126,12 @@ public:
 
     const std::vector <network_speed> & get_history () const;
 
+    template <speed_units unit>
+    void dump_raw_last (std::ostream & out)
+    {
+        out << convert_speed <unit> (m_history[m_history.size () - 1].download) << " " << convert_speed <unit> (m_history[m_history.size () - 1].upload) << " " << m_history[m_history.size () - 1].time << "\n";
+    }
+
 protected:
     std::string exec (const char * cmd);
     boost::property_tree::ptree parse (std::stringstream & ss);
@@ -181,6 +187,7 @@ int main ()
     speed_tester tester;
 
     std::ofstream fout;
+    std::ofstream raw;
 
     while (true)
     {
@@ -190,6 +197,10 @@ int main ()
         fout.open ("dump.txt", std::ofstream::app);
         tester.dump_last <speed_tester::speed_units::mbs> (fout);
         fout.close ();
+
+        raw.open ("rawdump.txt", std::ofstream::app);
+        tester.dump_raw_last <speed_tester::speed_units::mbs> (raw);
+        raw.close ();
 
         Sleep (10 * 60 * 1000);
     }

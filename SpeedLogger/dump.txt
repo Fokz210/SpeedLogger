@@ -2,3 +2,7 @@ download: 10.1843 Mb/s
 upload: 2.75213 Mb/s
 time: Wed May 27 15:48:59 2020
 
+download: 7.64858 Mb/s
+upload: 3.22573 Mb/s
+time: Wed May 27 15:59:11 2020
+
